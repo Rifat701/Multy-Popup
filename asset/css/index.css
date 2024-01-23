@@ -37,10 +37,14 @@ h1{
 
 }
 .popup img {
-    width: 415px;
+    width: 384px;
+    height: 250px;
     position: fixed;
-    top: 28%;
-    left: 35%;
+    top: 26%;
+    left: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .popup i{
     cursor: pointer;
@@ -50,8 +54,8 @@ h1{
     top: 0;
     left: 95%;
 }
+
 .popup i:hover {
-    left: 95%;
     transition: .4s;
     transform: rotate(360deg);
 }
@@ -59,27 +63,26 @@ h1{
 /************************************** RESPONSIVE CSS START  **************************************/
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-
-    /* h1{
-        font-size: 30px;
-    } */
+    
     .img {
         grid-row-gap: 10px;
         padding: 0 0 18px 0;
     }
     .img img {
-        width: 222px;
-        height: 145px;
+        max-width: 100%;
+        max-height: 150px;
     }
     .popup img {
-        width: 300px;
-        position: fixed;
-        top: 22%;
-        left: 31%;
+        top: 15%;
+        left: 25%;
     }
     .popup i {
         left: 92%;
         font-size: 40px;
+    }
+    .popup i:hover {
+        transition: none;
+        transform: none;
     }
 
 }
@@ -96,18 +99,22 @@ h1{
         grid-row-gap: 15px;
     }
     .img img {
-        width: 155px;
-        height: 124px;
+        max-width: 100%;
+        max-height: 120px;
     }
     .popup img {
         width: 280px;
-        position: fixed;
+        height: 195px;
         top: 21%;
         left: 26%;
     }
     .popup i {
         font-size: 40px;
         left: 88%;
+    }
+    .popup i:hover {
+        transition: none;
+        transform: none;
     }
 }
 
@@ -123,11 +130,12 @@ h1{
         grid-row-gap: 22px;
     }
     .img img {
-        width: 160px;
-        height: 114px;
+        max-width: 100%;
+        max-height: 120px;
     }
     .popup img {
-        width: 200px;
+        width: 195px;
+        height: 150px;
         position: fixed;
         top: 36%;
         left: 26%;
@@ -136,11 +144,11 @@ h1{
         font-size: 32px;
         left: 87%;
     }
+    .popup i:hover {
+        transition: none;
+        transform: none;
+    }
 
 }
-
-
-
-
 
 /************************************** RESPONSIVE CSS END  **************************************/
